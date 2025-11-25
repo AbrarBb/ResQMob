@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "ResQMob",
+    "slug": "resqmob-emergency-app",
+    "version": "1.0.0",
+    "sdkVersion": "53.0.0",
+    "orientation": "portrait",
+    "icon": "assets/images/icon.png",
+    "scheme": "resqmob",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.resqmob.emergency"
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "RECEIVE_BOOT_COMPLETED",
+        "FOREGROUND_SERVICE"
+      ],
+      "package": "com.resqmob.emergency"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-location",
+      "expo-notifications",
+      "expo-background-fetch",
+      "expo-task-manager",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#dc2626",
+          "sounds": []
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "notification": {
+      "icon": "./assets/images/icon.png",
+      "color": "#dc2626"
+    }
+  }
+}
